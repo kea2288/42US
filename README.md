@@ -19,9 +19,11 @@ Instead of running 4 scripts you have to run only one.
 
 ## New Usage
 
-As you clone repository copy all files and directroies outside of repository cause you can't execute script inside of repository. 
+As you clone repository or updated it then create folder "myDay". 
 
 Make sure that you put your day task folder into folder "myDay".
+
+Go to location of file "testURday" and execute it.
 
 Execute script: ./testURday
 
