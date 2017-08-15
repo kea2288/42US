@@ -3,7 +3,7 @@
 #---------------------------------------------------------------#
 # This program created to check tasks of Piscine days.          #
 # No garantee that correction by this progam will be 100% True. #
-# PLEASE TURN ON YOUR BRAIN AND NEVER GIVE UP!                  #
+# PLEASE TURN ON YOUR BRAIN! AND NEVER GIVE UP!                 #
 # ------------------------------------------------------------- #
 # Written by: ekulyyev              |                           #
 # Place: 42 School Silicon Valley   |                           #
@@ -43,11 +43,11 @@ if i != configFile:
 	print("Config file doesn\'t exists!" )
 
 if runScript:
-	os.system('./spawn.pl .{2}{3}{2}d0{0} .{2}{1}{2}config_d{0}.pl'.format(fileNum, myDayDir, sep, pathToTask))
+	os.system('./spawn.pl .{2}{3}{2}d{0} .{2}{1}{2}config_d{0}.pl'.format(fileNum, myDayDir, sep, pathToTask))
 	time.sleep(0.1)
 	os.system('./tools/build.sh')
-	time.sleep(0.1)
+	time.sleep(0.5)
 	os.system('./tools/verify.sh')
-	time.sleep(0.1)
+	time.sleep(0.5)
 	os.system('./tools/check_all.sh')
 	print(' Checked! You can look at your results.')
